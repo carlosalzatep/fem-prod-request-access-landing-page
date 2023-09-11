@@ -1,0 +1,34 @@
+{
+  "color": {
+    "text": {
+      "button": {
+        "rest": {
+          "value": "{config.color.primary.blue.darker.value}"
+        },
+        "active": {
+          "value": "{config.color.primary.blue.darker.value}"
+        },
+        "focus": {
+          "value": "{config.color.primary.blue.darker.value}"
+        }
+      }
+    },
+    "background": {
+      "button": {
+        "rest": {
+          "value": "{config.color.primary.green.light.value}"
+        },
+        "hover": {
+          "value": "{config.color.primary.green.lighter.value}"
+        }
+      }
+    },
+    "border": {
+      "button": {
+        "focus": {
+          "value": "{config.color.primary.green.light.value}"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "config": {
+    "color": {
+      "primary": {
+        "blue": {
+          "lighter": {
+            "value": "#C2CBE5"
+          },
+          "light": {
+            "value": "#5A668A"
+          },
+          "dark": {
+            "value": "#2C344B"
+          },
+          "darker": {
+            "value": "#121725"
+          }
+        },
+        "green": {
+          "lighter": {
+            "value": "#B3FFE2"
+          },
+          "light": {
+            "value": "#54E6AF"
+          }
+        }
+      },
+      "accent": {
+        "red": {
+          "value": "#FB3E3E"
+        }
+      },
+      "neutral": {
+        "value": "#FFFFFF"
+      }
+    }
+  }
+}

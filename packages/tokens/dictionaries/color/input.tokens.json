@@ -1,0 +1,34 @@
+{
+  "color": {
+    "text": {
+      "input": {
+        "default": {
+          "value": "{config.color.neutral.value}"
+        },
+        "placeholder": {
+          "value": "{config.color.neutral.value}80"
+        },
+        "error": {
+          "value": "{config.color.accent.red.value}"
+        }
+      }
+    },
+    "background": {
+      "input": {
+        "default": {
+          "value": "{config.color.primary.blue.dark.value}"
+        }
+      }
+    },
+    "border": {
+      "input": {
+        "default": {
+          "value": "{config.color.primary.blue.dark.value}"
+        },
+        "focus": {
+          "value": "{config.color.neutral.value}"
+        }
+      }
+    }
+  }
+}
