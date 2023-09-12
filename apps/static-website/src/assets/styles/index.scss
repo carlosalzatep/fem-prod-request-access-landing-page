@@ -1,0 +1,7 @@
+@use '@fem-pra/tokens/dist/css/colors.css';
+@use 'resets';
+@use 'globals';
+@use 'mixins';
+
+// Components
+@use './components/header.scss';

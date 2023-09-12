@@ -2,18 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
     />
 
-    <script
-      defer="defer"
-      type="module"
-      src="./index.ts"
-    ></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer="defer" type="module" src="./index.ts"></script>
+    <link rel="stylesheet" href="./assets/styles/index.scss" />
     <title>Pod request access landing page | Frontend Mentor</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <img class="header__logo" src="./assets/icons/logo.svg" alt="Pod logo" />
+    </header>
+    <!-- <picture class="header__background-img">
+        <source
+          srcset="./assets/images/desktop/image-host.jpg"
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="./assets/images/tablet/image-host.jpg"
+          media="(min-width: 768px)"
+        />
+        <img
+          src="./assets/images/mobile/image-host.jpg"
+          alt="man wearing cap and headsets, talking in front of a mic"
+        />
+      </picture> -->
+    <main class="main">
+      <h1 class="main__title">
+        <span class="main__title--emphasis">Publish your podcasts</span>
+        <span>everywhere.</span>
+      </h1>
+      <p>
+        Upload your audio to Pod with a single click. We’ll then distribute your
+        podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and
+        more!
+      </p>
+    </main>
+  </body>
 </html>

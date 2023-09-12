@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  outline: 0;
+  text-decoration: none;
+}
+
+// Media
+img,
+video {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+button,
+input {
+  appearance: none;
+  background: none;
+  border: 0;
+  outline: 0;
+}

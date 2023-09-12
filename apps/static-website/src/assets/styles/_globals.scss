@@ -1,0 +1,7 @@
+@use '@fem-pra/tokens/dist/scss/mixins' as *;
+
+body {
+  // font-family: 'Chivo', sans-serif;
+  @extend %fem-text-body-300;
+  text-align: center;
+}
