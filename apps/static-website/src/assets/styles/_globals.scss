@@ -1,7 +1,14 @@
 @use '@fem-pra/tokens/dist/scss/mixins' as *;
+@use '@fem-pra/tokens/dist/scss/tokens' as *;
 
 body {
-  // font-family: 'Chivo', sans-serif;
   @extend %fem-text-body-300;
-  text-align: center;
+  background-color: var(--fem-color-background-primary);
+  color: var(--fem-color-text-primary);
+  font-weight: lighter;
+
+  @media screen and (min-width: $fem-breakpoint-sm) {
+    font-size: $fem-text-body-400-size;
+    line-height: $fem-text-body-400-height;
+  }
 }

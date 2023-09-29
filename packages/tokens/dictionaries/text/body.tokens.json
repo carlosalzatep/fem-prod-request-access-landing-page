@@ -79,6 +79,7 @@
         "size": {
           "property": "font-size",
           "value": "{config.font.size.300.value}",
+          "comment": "based 15px",
           "mixin": true
         }
       },

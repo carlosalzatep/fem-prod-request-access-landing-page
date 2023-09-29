@@ -1,0 +1,26 @@
+@use '@fem-pra/tokens/dist/scss/tokens' as *;
+@use '@fem-pra/tokens/dist/scss/mixins' as *;
+
+.main {
+  padding: 0 $fem-size-offset-600 ($fem-size-offset-500 * 6);
+  text-align: center;
+
+  &__title {
+    @extend %fem-text-heading-sans-500;
+    margin-bottom: $fem-size-offset-500;
+    text-transform: uppercase;
+
+    &--emphasis {
+      color: var(--fem-color-text-emphasis);
+    }
+  }
+
+  &__text {
+    margin-bottom: $fem-size-offset-500 * 2;
+  }
+
+  &__wrapper {
+    display: grid;
+    row-gap: $fem-size-offset-500 * 3;
+  }
+}

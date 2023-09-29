@@ -1,7 +1,18 @@
 @use '@fem-pra/tokens/dist/scss/tokens' as *;
 
 .header {
-  img {
-    width: 135px;
+  padding: ($fem-size-offset-500 * 3.75) 0;
+
+  &__logo {
+    display: block;
+    margin: auto;
+    width: $fem-size-offset-500 * 8 + $fem-size-offset-400;
+  }
+
+  &__background-img {
+    position: absolute;
+    inset: 0 0 auto;
+    z-index: -1;
+    opacity: 0.1;
   }
 }
