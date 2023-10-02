@@ -5,10 +5,56 @@
   padding: 0 $fem-size-offset-600 ($fem-size-offset-500 * 6);
   text-align: center;
 
+  @media screen and (min-width: $fem-breakpoint-sm) {
+    background-color: var(--fem-color-background-primary);
+    margin-left: $fem-size-offset-500 * 2.43;
+    margin-top: $fem-size-offset-500 * 9.5;
+    padding: 0;
+    padding-top: $fem-size-offset-500 * 5.8125;
+    position: relative;
+    text-align: left;
+    width: 82.68%;
+
+    &::after {
+      position: absolute;
+      background-image: url('@/assets/icons/bg-pattern-dots.svg');
+      bottom: -($fem-size-offset-500 * 16);
+      content: '';
+      height: ($fem-size-offset-700 * 3) + $fem-size-offset-400;
+      width: $fem-size-offset-500 * 14.5;
+      left: $fem-size-offset-500 * 1.85;
+    }
+  }
+
+  @media screen and (min-width: $fem-breakpoint-lg) {
+    position: static;
+    margin-top: $fem-size-offset-500 * 6.4375;
+    margin-left: $fem-size-offset-500 * 10.3125;
+    padding-top: $fem-size-offset-500 * 5.5;
+    width: 50.2085%;
+
+    &::after {
+      top: ($fem-size-offset-500 * 44.875);
+      left: auto;
+      right: 0;
+    }
+  }
+
   &__title {
     @extend %fem-text-heading-sans-500;
     margin-bottom: $fem-size-offset-500;
     text-transform: uppercase;
+
+    @media screen and (min-width: $fem-breakpoint-sm) {
+      font-size: $fem-text-heading-sans-600-size;
+      line-height: $fem-text-heading-sans-600-height;
+      margin-bottom: $fem-size-offset-500 * 2;
+    }
+    @media screen and (min-width: $fem-breakpoint-lg) {
+      font-size: $fem-text-heading-sans-700-size;
+      line-height: $fem-text-heading-sans-700-height;
+      margin-bottom: $fem-size-offset-500 * 1.5;
+    }
 
     &--emphasis {
       color: var(--fem-color-text-emphasis);
@@ -17,10 +63,28 @@
 
   &__text {
     margin-bottom: $fem-size-offset-500 * 2;
+
+    @media screen and (min-width: $fem-breakpoint-sm) {
+      margin-bottom: $fem-size-offset-500 * 2.5;
+      width: 73.8%;
+    }
+    @media screen and (min-width: $fem-breakpoint-lg) {
+      width: 61.55%;
+    }
   }
 
   &__wrapper {
     display: grid;
     row-gap: $fem-size-offset-500 * 3;
+
+    @media screen and (min-width: $fem-breakpoint-sm) {
+      row-gap: $fem-size-offset-500 * 4;
+    }
+
+    .form {
+      @media screen and (min-width: $fem-breakpoint-sm) {
+        grid-row-start: 1;
+      }
+    }
   }
 }

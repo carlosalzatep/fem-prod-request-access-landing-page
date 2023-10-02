@@ -7,7 +7,14 @@
     grid-row-start: 1;
     grid-template-columns: repeat(4, auto);
 
+    @media screen and (min-width: $fem-breakpoint-sm) {
+      grid-row-start: auto;
+      column-gap: $fem-size-offset-500 * 2.5;
+      width: 88.889%;
+    }
+
     &__link {
+      height: $fem-size-offset-500 * 1.813;
       outline: none;
 
       &::after {
@@ -25,6 +32,10 @@
 
     &__icon {
       height: $fem-size-offset-500 + $fem-size-offset-100;
+
+      @media screen and (min-width: $fem-breakpoint-sm) {
+        height: $fem-size-offset-500 * 1.813;
+      }
     }
   }
 }

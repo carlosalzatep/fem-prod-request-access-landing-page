@@ -3,10 +3,23 @@
 .header {
   padding: ($fem-size-offset-500 * 3.75) 0;
 
+  @media screen and (min-width: $fem-breakpoint-sm) {
+    padding: ($fem-size-offset-500 * 3.125) 0 0 ($fem-size-offset-500 * 2.43);
+    text-align: left;
+  }
+
+  @media screen and (min-width: $fem-breakpoint-lg) {
+    padding: ($fem-size-offset-500 * 6.375) 0 0 ($fem-size-offset-500 * 10.3125);
+  }
+
   &__logo {
     display: block;
     margin: auto;
-    width: $fem-size-offset-500 * 8 + $fem-size-offset-400;
+    width: $fem-size-offset-500 * 8.44;
+
+    @media screen and (min-width: $fem-breakpoint-sm) {
+      margin: unset;
+    }
   }
 
   &__background-img {
@@ -14,5 +27,15 @@
     inset: 0 0 auto;
     z-index: -1;
     opacity: 0.1;
+
+    @media screen and (min-width: $fem-breakpoint-sm) {
+      left: 36%;
+      opacity: 1;
+    }
+
+    @media screen and (min-width: $fem-breakpoint-lg) {
+      margin-top: ($fem-size-offset-500 * 6.375) + ($fem-size-offset-500 * 1.75);
+      left: 38.34%;
+    }
   }
 }

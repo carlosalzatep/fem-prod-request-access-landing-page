@@ -93,7 +93,7 @@
         </section>
 
         <section class="form">
-          <form class="subscribe-form">
+          <form novalidate id="subscribe-form" class="subscribe-form">
             <input
               class="subscribe-form__input"
               id="email"
@@ -103,10 +103,10 @@
               required
               aria-labelledby="request-btn"
             />
-            <span class="subscribe-form__warning-msg"
+            <span id="warning-msg" class="subscribe-form__warning-msg"
               >Oops! Please check your email</span
             >
-            <button id="request-btn" type="submit" class="subscribe-form__btn">
+            <button type="submit" class="subscribe-form__btn">
               Request Access
             </button>
           </form>
