@@ -44,6 +44,7 @@
     @extend %fem-text-heading-sans-500;
     margin-bottom: $fem-size-offset-500;
     text-transform: uppercase;
+    font-weight: lighter;
 
     @media screen and (min-width: $fem-breakpoint-sm) {
       font-size: $fem-text-heading-sans-600-size;

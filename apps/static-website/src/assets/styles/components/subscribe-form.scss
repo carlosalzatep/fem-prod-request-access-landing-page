@@ -53,6 +53,11 @@
     &:focus {
       background-color: var(--fem-color-background-button-hover);
     }
+
+    @media screen and (min-width: $fem-breakpoint-lg) {
+      padding: ($fem-size-offset-400 + $fem-size-offset-100)
+        ($fem-size-offset-500 * 1.687);
+    }
   }
 
   &__warning-msg {

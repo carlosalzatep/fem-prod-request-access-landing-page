@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Frontend Mentor challenge: Pod request access landing page"
+    />
 
     <link
       rel="icon"
@@ -14,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@100;300;400;700;900&display=swap"
       rel="stylesheet"
     />
     <script defer="defer" type="module" src="./index.ts"></script>
@@ -23,7 +27,12 @@
   </head>
   <body>
     <header class="header">
-      <img class="header__logo" src="./assets/icons/logo.svg" alt="Pod logo" />
+      <img
+        class="header__logo"
+        src="./assets/icons/logo.svg"
+        alt="Pod logo"
+        height="56"
+      />
       <picture class="header__background-img">
         <source
           srcset="./assets/images/desktop/image-host.jpg"
@@ -51,66 +60,65 @@
       </p>
 
       <div class="main__wrapper">
-        <section class="podcast-apps">
-          <ul class="logos-list">
-            <li class="logos-list__item">
-              <a class="logos-list__link" href="#">
-                <img
-                  class="logos-list__icon"
-                  src="./assets/icons/spotify.svg"
-                  alt="Spotify logo"
-                />
-              </a>
-            </li>
-            <li class="logos-list__item">
-              <a class="logos-list__link" href="#">
-                <img
-                  class="logos-list__icon"
-                  src="./assets/icons/apple-podcast.svg"
-                  alt="Apple podcast logo"
-                />
-              </a>
-            </li>
-            <li class="logos-list__item">
-              <a class="logos-list__link" href="#">
-                <img
-                  class="logos-list__icon"
-                  src="./assets/icons/google-podcasts.svg"
-                  alt="Google podcast logo"
-                />
-              </a>
-            </li>
-            <li class="logos-list__item">
-              <a class="logos-list__link" href="#">
-                <img
-                  class="logos-list__icon"
-                  src="./assets/icons/pocket-casts.svg"
-                  alt="Pocket cast logo"
-                />
-              </a>
-            </li>
-          </ul>
-        </section>
+        <ul class="logos-list">
+          <li class="logos-list__item">
+            <a class="logos-list__link" href="#">
+              <img
+                class="logos-list__icon"
+                src="./assets/icons/spotify.svg"
+                alt="Spotify logo"
+              />
+            </a>
+          </li>
+          <li class="logos-list__item">
+            <a class="logos-list__link" href="#">
+              <img
+                class="logos-list__icon"
+                src="./assets/icons/apple-podcast.svg"
+                alt="Apple podcast logo"
+              />
+            </a>
+          </li>
+          <li class="logos-list__item">
+            <a class="logos-list__link" href="#">
+              <img
+                class="logos-list__icon"
+                src="./assets/icons/google-podcasts.svg"
+                alt="Google podcast logo"
+              />
+            </a>
+          </li>
+          <li class="logos-list__item">
+            <a class="logos-list__link" href="#">
+              <img
+                class="logos-list__icon"
+                src="./assets/icons/pocket-casts.svg"
+                alt="Pocket cast logo"
+              />
+            </a>
+          </li>
+        </ul>
 
-        <section class="form">
-          <form novalidate id="subscribe-form" class="subscribe-form">
-            <input
-              class="subscribe-form__input"
-              id="email"
-              name="email"
-              placeholder="Email address"
-              type="email"
-              required
-              aria-labelledby="request-btn"
-            />
-            <span id="warning-msg" class="subscribe-form__warning-msg"
-              >Oops! Please check your email</span
-            >
-            <button type="submit" class="subscribe-form__btn">
-              Request Access
-            </button>
-          </form>
-        </section>
+        <form novalidate id="subscribe-form" class="subscribe-form">
+          <input
+            autocomplete="email"
+            class="subscribe-form__input"
+            id="email"
+            name="email"
+            placeholder="Email address"
+            type="email"
+            required
+            aria-labelledby="request-btn"
+          />
+          <span
+            id="warning-msg"
+            class="subscribe-form__warning-msg subscribe-form__warning-msg--enable"
+            >Oops! Please check your email</span
+          >
+          <button id="request-btn" type="submit" class="subscribe-form__btn">
+            Request Access
+          </button>
+        </form>
       </div>
     </main>
   </body>

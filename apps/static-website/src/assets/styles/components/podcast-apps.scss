@@ -1,41 +1,43 @@
 @use '@fem-pra/tokens/dist/scss/tokens' as *;
 
-.podcast-apps {
-  .logos-list {
-    display: grid;
-    column-gap: $fem-size-offset-500;
-    grid-row-start: 1;
-    grid-template-columns: repeat(4, auto);
+.logos-list {
+  display: grid;
+  column-gap: $fem-size-offset-500;
+  grid-row-start: 1;
+  grid-template-columns: repeat(4, auto);
+
+  @media screen and (min-width: $fem-breakpoint-sm) {
+    grid-row-start: auto;
+    column-gap: $fem-size-offset-500 * 2.5;
+    width: 88.889%;
+  }
+
+  @media screen and (min-width: $fem-breakpoint-lg) {
+    width: 74.14%;
+  }
+
+  &__link {
+    height: $fem-size-offset-500 * 1.813;
+    outline: none;
+
+    &::after {
+      background-color: var(--fem-color-icon-primary);
+    }
+
+    &:is(:hover, :focus)::after {
+      background-color: var(--fem-color-icon-secondary);
+    }
+
+    &:focus {
+      box-shadow: inset 0 0 0 2px var(--fem-color-border-button-focus);
+    }
+  }
+
+  &__icon {
+    height: $fem-size-offset-500 + $fem-size-offset-100;
 
     @media screen and (min-width: $fem-breakpoint-sm) {
-      grid-row-start: auto;
-      column-gap: $fem-size-offset-500 * 2.5;
-      width: 88.889%;
-    }
-
-    &__link {
       height: $fem-size-offset-500 * 1.813;
-      outline: none;
-
-      &::after {
-        background-color: var(--fem-color-icon-primary);
-      }
-
-      &:is(:hover, :focus)::after {
-        background-color: var(--fem-color-icon-secondary);
-      }
-
-      &:focus {
-        box-shadow: inset 0 0 0 2px var(--fem-color-border-button-focus);
-      }
-    }
-
-    &__icon {
-      height: $fem-size-offset-500 + $fem-size-offset-100;
-
-      @media screen and (min-width: $fem-breakpoint-sm) {
-        height: $fem-size-offset-500 * 1.813;
-      }
     }
   }
 }
