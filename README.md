@@ -10,14 +10,9 @@ This is a solution to the [Pod request access landing page challenge on Frontend
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
-NA
+This challenge is about building out an early access landing page that includes custom form validation.
 ### The challenge
 
 Users should be able to:
@@ -36,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/carlosalzatep/fem-prod-request-access-landing-page](https://github.com/carlosalzatep/fem-prod-request-access-landing-page)
-- Live Site URL: [https://main--comfy-kringle-3744c6.netlify.app/](https://main--comfy-kringle-3744c6.netlify.app/)
+- Live Site URL: [https://fem-prod-request-access.netlify.app/](https://fem-prod-request-access.netlify.app/)
 
 ## My process
 
@@ -48,26 +43,3 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - TypeScript
-
-
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉');
-};
-```

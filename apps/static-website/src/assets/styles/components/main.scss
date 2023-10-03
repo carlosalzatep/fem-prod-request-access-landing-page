@@ -82,7 +82,7 @@
       row-gap: $fem-size-offset-500 * 4;
     }
 
-    .form {
+    .subscribe-form {
       @media screen and (min-width: $fem-breakpoint-sm) {
         grid-row-start: 1;
       }
