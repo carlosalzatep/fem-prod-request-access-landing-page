@@ -5,6 +5,10 @@
   display: grid;
   row-gap: $fem-size-offset-500;
 
+  &:focus-within {
+    box-shadow: none;
+  }
+
   @media screen and (min-width: $fem-breakpoint-sm) {
     background-color: var(--fem-color-background-input-default);
     border-radius: $fem-size-offset-600 + $fem-size-offset-300;
@@ -14,7 +18,12 @@
     padding: 0.3125rem;
     row-gap: 0;
     width: calc(73.798% - $fem-size-offset-500);
+
+    &:focus-within {
+      box-shadow: inset 0 0 0 1px var(--fem-color-border-input-focus);
+    }
   }
+
   @media screen and (min-width: $fem-breakpoint-lg) {
     width: 59.06%;
   }
@@ -35,6 +44,12 @@
 
     &:focus {
       box-shadow: inset 0 0 0 2px var(--fem-color-border-input-focus);
+    }
+
+    @media screen and (min-width: $fem-breakpoint-sm) {
+      &:focus {
+        box-shadow: none;
+      }
     }
   }
 

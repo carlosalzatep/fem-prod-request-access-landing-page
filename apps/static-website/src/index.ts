@@ -18,8 +18,10 @@ const requestAccess = (event: Event) => {
 
   if (isEmailValueMissing || !isEmailValid || emailMismatch) {
     warningMsg.innerText = emailMismatch ? MSG_CHECK_EMAIL : MSG_ADD_EMAIL;
+    emailInput.ariaInvalid = 'true';
     warningMsg.classList.add(MSG_CLASS_MODIFIER);
   } else {
+    emailInput.ariaInvalid = undefined;
     warningMsg.classList.remove(MSG_CLASS_MODIFIER);
   }
   emailInput.focus();

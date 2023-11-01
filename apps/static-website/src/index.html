@@ -60,61 +60,64 @@
       </p>
 
       <div class="main__wrapper">
-        <ul class="logos-list">
-          <li class="logos-list__item">
-            <a class="logos-list__link" href="#">
-              <img
-                class="logos-list__icon"
-                src="./assets/icons/spotify.svg"
-                alt="Spotify logo"
-              />
-            </a>
-          </li>
-          <li class="logos-list__item">
-            <a class="logos-list__link" href="#">
-              <img
-                class="logos-list__icon"
-                src="./assets/icons/apple-podcast.svg"
-                alt="Apple podcast logo"
-              />
-            </a>
-          </li>
-          <li class="logos-list__item">
-            <a class="logos-list__link" href="#">
-              <img
-                class="logos-list__icon"
-                src="./assets/icons/google-podcasts.svg"
-                alt="Google podcast logo"
-              />
-            </a>
-          </li>
-          <li class="logos-list__item">
-            <a class="logos-list__link" href="#">
-              <img
-                class="logos-list__icon"
-                src="./assets/icons/pocket-casts.svg"
-                alt="Pocket cast logo"
-              />
-            </a>
-          </li>
-        </ul>
+        <nav>
+          <ul class="logos-list">
+            <li class="logos-list__item">
+              <a class="logos-list__link" href="#" title="Spotify">
+                <img
+                  class="logos-list__icon"
+                  src="./assets/icons/spotify.svg"
+                  alt="Spotify logo"
+                />
+              </a>
+            </li>
+            <li class="logos-list__item">
+              <a class="logos-list__link" href="#" title="Apple podcast">
+                <img
+                  class="logos-list__icon"
+                  src="./assets/icons/apple-podcast.svg"
+                  alt="Apple podcast logo"
+                />
+              </a>
+            </li>
+            <li class="logos-list__item">
+              <a class="logos-list__link" href="#" title="Google podcast">
+                <img
+                  class="logos-list__icon"
+                  src="./assets/icons/google-podcasts.svg"
+                  alt="Google podcast logo"
+                />
+              </a>
+            </li>
+            <li class="logos-list__item">
+              <a class="logos-list__link" href="#" title="Pocket cast">
+                <img
+                  class="logos-list__icon"
+                  src="./assets/icons/pocket-casts.svg"
+                  alt="Pocket cast logo"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
 
         <form novalidate id="subscribe-form" class="subscribe-form">
           <input
+            aria-labelledby="request-btn"
+            aria-required="true"
             autocomplete="email"
             class="subscribe-form__input"
             id="email"
             name="email"
             placeholder="Email address"
-            type="email"
             required
-            aria-labelledby="request-btn"
+            type="email"
           />
           <span
             id="warning-msg"
             class="subscribe-form__warning-msg subscribe-form__warning-msg--enable"
-            >Oops! Please check your email</span
-          >
+            aria-live="assertive"
+          ></span>
           <button id="request-btn" type="submit" class="subscribe-form__btn">
             Request Access
           </button>
